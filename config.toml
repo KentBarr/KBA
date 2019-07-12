@@ -1,5 +1,5 @@
 title = "Kent Barrett Art"
-baseURL = "https://KentBarr.github.io/"
+baseURL = "https://kentbarr.github.io/KBA/"
 languageCode = "en-us"
 theme = "airspace"
 publishDir = "docs"

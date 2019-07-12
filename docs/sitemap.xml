@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://KentBarr.github.io/categories/</loc>
+    <loc>https://kentbarr.github.io/KBA/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://KentBarr.github.io/</loc>
+    <loc>https://kentbarr.github.io/KBA/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://KentBarr.github.io/tags/</loc>
+    <loc>https://kentbarr.github.io/KBA/tags/</loc>
     <priority>0</priority>
   </url>
   

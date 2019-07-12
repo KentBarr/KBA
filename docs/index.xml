@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kent Barrett Art</title>
-    <link>https://KentBarr.github.io/</link>
+    <link>https://kentbarr.github.io/KBA/</link>
     <description>Recent content on Kent Barrett Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://KentBarr.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://kentbarr.github.io/KBA/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
