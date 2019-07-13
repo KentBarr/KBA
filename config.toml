@@ -1,7 +1,7 @@
 title = "Kent Barrett Art"
 baseURL = "https://kentbarr.github.io/KBA/"
 languageCode = "en-us"
-theme = "airspace"
+theme = "syna"
 publishDir = "docs"
 
 # The site's parameters
@@ -100,10 +100,4 @@ publishDir = "docs"
       subject = "Your subject"
       message = "Your message"
       button = "Send message"
-    [params.contact.box]
-      title = "Stop by for a visit"
-      address = "North Main Street, Brooklyn Australia"
-      email = "Email: github@kentbarrett.com"
-      phone = "Phone: +88 01672 506 744"
-    [params.contact.gmaps]
-      title = "We Also Count in Google Maps"
+    

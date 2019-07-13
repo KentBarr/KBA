@@ -1,246 +1,413 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-us">
+  <head>
+  <meta name="theme" content="Syna">
+  <meta name="theme-version" content="v0.15">
+  <meta name="theme-url" content="https://syna.okkur.org">
+  <meta name="theme-description" content="Highly customizable open source theme for Hugo based static websites">
+  <meta name="theme-author" content="Okkur Labs">
+  <meta name="theme-author-url" content="https://about.okkur.org">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta name="google" value="notranslate">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="">
+  <meta property="og:title" content=" &amp;middot; Kent Barrett Art">
+  <meta property="og:url" content="https://kentbarr.github.io/KBA/articles/putting-it-all-together/">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Kent Barrett Art">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content=" &amp;middot; Kent Barrett Art" />
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="https://kentbarr.github.io/KBA/articles/putting-it-all-together/" />
+    <meta property="og:image" content="">
+    <meta name="twitter:image" content="">
+  
 
+  <meta name="generator" content="Hugo 0.55.6" />
 
+  <title> &middot; Kent Barrett Art</title>
 
+  <!-- Theme Styles -->
+  <style>
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
 
+ 
+@-ms-viewport {
+  width: device-width; }
 
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar; }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 540px;
+  max-width: 720px;
+  max-width: 960px;
+  max-width: 1140px; }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
 
-<title></title>
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
 
-<meta name="generator" content="Hugo 0.55.6" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/owl.carousel.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/ionicons.min.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/animate.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/syntax.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/venobox.css" />
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/style.css" />
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
 
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
 
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none; }
 
-<script src="https://kentbarr.github.io/KBA/js/jquery-1.10.2.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/bootstrap.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/owl.carousel.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/plugins.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/venobox.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/main.js"></script>
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
 
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
 
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%; }
 
-</head>
-<body>
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
 
-	
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.order-first {
+  order: -1; }
+
+.order-last {
+  order: 13; }
+
+.order-0 {
+  order: 0; }
+
+.order-1 {
+  order: 1; }
+
+.order-2 {
+  order: 2; }
+
+.order-3 {
+  order: 3; }
+
+.order-4 {
+  order: 4; }
+
+.order-5 {
+  order: 5; }
+
+.order-6 {
+  order: 6; }
+
+.order-7 {
+  order: 7; }
+
+.order-8 {
+  order: 8; }
+
+.order-9 {
+  order: 9; }
+
+.order-10 {
+  order: 10; }
+
+.order-11 {
+  order: 11; }
+
+.order-12 {
+  order: 12; }
+
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.d-none {
+  display: none !important; }
+
+.d-inline {
+  display: inline !important; }
+
+.d-inline-block {
+  display: inline-block !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-table {
+  display: table !important; }
+
+.d-table-row {
+  display: table-row !important; }
+
+.d-table-cell {
+  display: table-cell !important; }
+
+.d-flex {
+  display: flex !important; }
+
+.d-inline-flex {
+  display: inline-flex !important; }
+
+@media print {
+  .d-print-none {
+    display: none !important; }
+  .d-print-inline {
+    display: inline !important; }
+  .d-print-inline-block {
+    display: inline-block !important; }
+  .d-print-block {
+    display: block !important; }
+  .d-print-table {
+    display: table !important; }
+  .d-print-table-row {
+    display: table-row !important; }
+  .d-print-table-cell {
+    display: table-cell !important; }
+  .d-print-flex {
+    display: flex !important; }
+  .d-print-inline-flex {
+    display: inline-flex !important; } }
+
+.flex-row {
+  flex-direction: row !important; }
+
+.flex-column {
+  flex-direction: column !important; }
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important; }
+
+.flex-column-reverse {
+  flex-direction: column-reverse !important; }
+
+.flex-wrap {
+  flex-wrap: wrap !important; }
+
+.flex-nowrap {
+  flex-wrap: nowrap !important; }
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important; }
+
+.flex-fill {
+  flex: 1 1 auto !important; }
+
+.flex-grow-0 {
+  flex-grow: 0 !important; }
+
+.flex-grow-1 {
+  flex-grow: 1 !important; }
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important; }
+
+.flex-shrink-1 {
+  flex-shrink: 1 !important; }
+
+.justify-content-start {
+  justify-content: flex-start !important; }
+
+.justify-content-end {
+  justify-content: flex-end !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.justify-content-between {
+  justify-content: space-between !important; }
+
+.justify-content-around {
+  justify-content: space-around !important; }
+
+.align-items-start {
+  align-items: flex-start !important; }
+
+.align-items-end {
+  align-items: flex-end !important; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.align-items-baseline {
+  align-items: baseline !important; }
+
+.align-items-stretch {
+  align-items: stretch !important; }
+
+.align-content-start {
+  align-content: flex-start !important; }
+
+.align-content-end {
+  align-content: flex-end !important; }
+
+.align-content-center {
+  align-content: center !important; }
+
+.align-content-between {
+  align-content: space-between !important; }
+
+.align-content-around {
+  align-content: space-around !important; }
+
+.align-content-stretch {
+  align-content: stretch !important; }
+
+.align-self-auto {
+  align-self: auto !important; }
+
+.align-self-start {
+  align-self: flex-start !important; }
+
+.align-self-end {
+  align-self: flex-end !important; }
+
+.align-self-center {
+  align-self: center !important; }
+
+.align-self-baseline {
+  align-self: baseline !important; }
+
+.align-self-stretch {
+  align-self: stretch !important; }
+</style>
+
+  <link href="/KBA/style.min.c5801db8f5f1873eec776c1a8b4f6d85bfe4d01781ecf7d3e9510b95a7b64918.css" rel="stylesheet">
+
+  <script>
+    window.syna = {
+      
+    };
+  </script>
+  <script src="/KBA/KBA/scripts/syna-head.min.bb34bad09b42b3febef27ef9976fc5d5c34c8f199549c80f2bfb0a6ecc2586e2.js"></script></head>
+<body class="bg-secondary">
+    <div id="react"></div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header row mx-0">
+              <div class="modal-title col px-0">
+                <h5 class="title text-dark"></h5>
+                <h6 class="subtitle text-secondary"></h6>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
               </button>
-              <a class="navbar-brand" href="https://kentbarr.github.io/KBA/">
-                <img src="https://kentbarr.github.io/KBA/img/logo.png" alt="Kent Barrett Art Logo">
-              </a>
             </div>
-            
-
-            
-            <div class="collapse navbar-collapse" id="navigation">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://kentbarr.github.io/KBA/">Home</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/articles">Articles</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/work">Artwork</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/blog">Blog</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/service">Service</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/contact">Contact</a></li>
-                
-              </ul>
+            <img src="" alt="" class="img-fluid">
+            <div class="modal-body p-3">
+              <div class="badge-container"></div>
+              <div class="content"></div>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
-	<div class="post">
-	  
-	  <section class="section" style="border: 1px dotted #ddd;">
-	    <div class="container">
-	      <div class="row">
-	        <div>
-	          <div class="block">
-							
-	            <h1></h1>
-	            <div class="post-info-wrapper">
-	              <p class="italic">By <span class="bold"></span> on <span class="bold">Jan 1, 0001</span></p>
-	            </div>
-	            <hr />
-	            <p>
-
-<h2 id="c-2013-roguesupport-inc-under-a-creative-commons-attribution-noncommercial-noderivs-3-0-unported-license">&copy; 2013 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.</h2>
-
-<p>In THE TENDER FOR LAW</p>
-
-<p>one of its evolved Maxims is that &ldquo;The gold is in the comments&rdquo;. This is true for me too, as it allows me to gauge just how much you are assimilating. Every once in a while though, a &ldquo;gold nugget&rdquo; comes up for me. This is no easy task, and the scarcity of this gold makes it far more valuable to me than it is to you. The question I reference came up unexpectedly and related to an incredulous observation regarding the product of my three years&rsquo; of giving actual answers and actual solutions, and telling the actual truth (all of which can be verified by the passage of time). This erstwhile interrogator asked, &ldquo;Why aren&rsquo;t millions of people here?&rdquo;</p>
-
-<p>It&rsquo;s a fair question. The very few of you that are here on the Battlefield 2142 card (that&rsquo;s the only way you can become a member), have all witnessed, both personally and externally, the profound truth that I tell. To be clear, I don&rsquo;t just tell it to complain, nor do I tell it because I want something from you, I actually provide a solution. It&rsquo;s outside your current scope of experience, but you have to understand the only remedy you will get is through something new&hellip;so of course you will have no experience. That&rsquo;s what makes it new. Like every pioneering venture - whether it&rsquo;s sailing across the Atlantic to wipe out the Native population with disease, or wiping out the banking system with cryptographic currencies - you must understand the environment you are entering, or you will not survive.</p>
-
-<p>We&rsquo;re at a point in our societal &ldquo;evolution&rdquo; where we can just shrug off the fact that we used guns, germs and steel, to invade a land and kill its people. You&rsquo;ll forgive me if I have no ethical problem collapsing the banking system and starting a war. That sounds &ldquo;crazy&rdquo; when you say it out loud, but if you understand computer science, law and history, you realize that with cryptographic currency it is stupidly easy to collapse the banking system and start a war.</p>
-
-<p>In my youth, I was sold to the government and trained for service. Computer Science is my first love, but they forced the law and history on me. They were also what taught me that computer science is the answer to everything. A simple little mental switch changed everything. With every new thing that I was learning at my young age, I asked myself &ldquo;How does this apply to computer science?&rdquo;. Any theory I came up with could be immediately tested, and could even be peer-reviewed by another computer scientist. The irony of events that must come to pass, is that you, the &ldquo;good Citizen&rdquo; and &ldquo;tax payer&rdquo;, bank-rolled me. I am your creation. You did this yourselves, and I&rsquo;m not the only product of this process. The first of them are in their mid-fifties now, and are embedded firmly, but quietly, within &ldquo;the system&rdquo;. Of all the monsters you created I am by far the loudest. I&rsquo;m the loudest because I promised to be. I keep my oaths. That&rsquo;s another Kool-aid flavour I was forced to drink; but that one sort of stuck&hellip;and it has served me, and those I trust, well.</p>
-
-<p>I survived everything you bank-rolled for me only because I was able to understand, and to adapt, to what is new. This core motivation is why I&rsquo;ve never been scared of technology. I understand it long before it gets a chance to frighten me. When I say computer science is the answer to everything, I really mean it. Law and money are only a tiny piece of the things for which I&rsquo;m using my knowledge of computer science. I&rsquo;m not just talking out of my ass here, I actually show you these things. The thirty-seven members of THE TENDER FOR LAW are those that are past the &ldquo;point of doubt&rdquo;, and are now being overwhelmed with all the true things they never observed before. I&rsquo;m writing this because I know how important it is for me to understand it. Computer science says so, and &ldquo;Scott is always right&rdquo;, because &ldquo;the machine&rdquo; is never wrong. Be very careful with that last statement. None of you reading are qualified to understand the concept that &ldquo;the machine is never wrong&rdquo;. I accept that you may comprehend the dictionary definitions in that sentence, but you simply don&rsquo;t know enough for that to be real to you. This means that the only way you could accept that concept is by utilizing the most vile human condition known as &ldquo;faith&rdquo;. Unfortunately that&rsquo;s not an option you have here. You simply have to trust what I&rsquo;m saying is true, and to know that I&rsquo;ll always do my best to substantiate why what I&rsquo;m saying is true. You also know that I have to seriously &ldquo;dumb myself down&rdquo; to even talk to you. I honestly don&rsquo;t mean that in a condescending way. I was &ldquo;built&rdquo; this way - you paid for it. Unfortunately it&rsquo;s vitally important you do understand what I&rsquo;m saying is true, and that requires a little work out of you. This is why many of the original members were filtered out. You just weren&rsquo;t ready to understand enough. Some of you are locked in a thought process where you think that if &ldquo;you&rdquo; can&rsquo;t understand it, than nobody can. In one of the many Robert Menard &ldquo;Public Smack-Downs&rdquo;, Mr. Menard could not grasp that it was possible for me to produce a YouTube clone in fifteen minutes. He didn&rsquo;t take the five seconds it would have expended to Google the words, &ldquo;YouTube clone&rdquo;, to confirm that the methodology exists. He&rsquo;ll simply dismiss it because he can&rsquo;t understand it. Ironically he&rsquo;ll say the same about me when I dismiss Piece-of-Shit Jesus. The problem with that argument is that, here in reality, PHP exists, Apache servers exist, and YouTube exists. Piece-of-Shit Jesus doesn&rsquo;t.</p>
-
-<p>Those of you trying to understand what I teach, mistakenly think this is a linear progression. It most certainly is not. This isn&rsquo;t Grade school, where you go from Grade One to Grade Twelve; this is understanding how to put things together. The more knowledge and skills you have in the real world, the easier this will be to do. One of the methods I teach you to learn how to think, is to learn to code. Computer science may be THE ANSWER TO EVERYTHING, but it has absolutely nothing to do with computers. Computer science forms part of a trinity that makes the computer exist. The magnificent machine on which you are reading this text, is in the real world, a practical by-product of computer science and sentient thought. Two insubstantial things: You can&rsquo;t pick them up, you can&rsquo;t see them, they don&rsquo;t make any noise, and they don&rsquo;t emit a smell&hellip;but they are most certainly measurable and quantifiable. This is a quality that Piece-of-Shit Jesus lacks. Millions, nay billions, believe Piece-of-Shit Jesus is real. They&rsquo;ll try to make Piece-of-Shit Jesus something substantial by writing a bunch of shit giving Piece-of-Shit Jesus credit for anything good.</p>
-
-<p>Unfortunately, here in reality, no matter how much you masturbate you&rsquo;re not going to make a baby.</p>
-
-<p>If it&rsquo;s measurable and quantifiable, it&rsquo;s real. Computer science, combined with sentient thought, created the magnificent machine you&rsquo;re reading this text on now. The thing about computer science is that you can learn a lot about the universe with it. You can literally ask the universe questions, and it will answer back in numbers. You are reading this text on a machine that&rsquo;s capable of doing that. And, the thing about trinities is that each piece has to be a strong as the other two, which means they must have the same properties. Wolfram Alpha and IBM&rsquo;s DEEP LEARNING processes, are the latest wonders to come out of this trinity I just described. Look at the results. A computer &ldquo;daydreams&rdquo;. At this pace we&rsquo;ll understand consciousness in less than a decade.</p>
-
-<p>One of the most disturbing things about Piece-of-Shit Christians is how much they claim to &ldquo;know&rdquo; how God/Jesus thinks/feels, but they fall a little short when you ask them to prove it; followed by the inevitable celebration of ignorance that they call &ldquo;faith&rdquo;. Billions think that&rsquo;s OK. This very real thing is what&rsquo;s referred to in the Fermi Paradox as a &ldquo;Great Filter&rdquo;. Tara has written extensively about these filters, and we mercilessly hammer at them for as long as we can. It&rsquo;s futile. I have literally wasted years thinking I could break these filters. But it has a 100% failure rate. What started as a labour-of-love for friends and loved ones (at their behest, and according to them, to assist them in leading full and relevant lives), became only a footnote in a larger initiative. Then why aren&rsquo;t there millions seeking the truths I tell? They&rsquo;re stuck in the &ldquo;Great Filter&rdquo;. Our civilization won&rsquo;t survive it. Computer science says so. The Machine is never wrong. Fortunately, everything you need to know about life, you can learn from Star Trek. The only way to beat the no-win scenario, is to change the conditions of the test. That was one of the many times Gene Roddenberry profoundly affected me as a man, and I was just a child. I this case I recall seeing Captain Kirk&rsquo;s son accusing his father of &ldquo;cheating&rdquo;, and his response, &ldquo;I changed the conditions of the test. I don&rsquo;t believe in the no-win scenario&rdquo;. I missed the next twenty minutes of the movie as that sunk in. I&rsquo;ve spent a lifetime doing just that, changing the conditions of the test.</p>
-
-<p>You get to be a &ldquo;colonist&rdquo; now. The conditions of the test are changing as we speak. By the time the conditions of the test have been changed, you should be well-established, and you will likely do very, very well for yourself. I&rsquo;ll trust you&rsquo;ll remember how you got that way when I ask to borrow your yacht for a month, with only a vague promise of it returning intact.</p>
-
-<p>These great filters are very, very real, and as you learn you will find that there are others ahead. Elon Musk is terrified of the concept of a self-aware artificial intelligence. A quick &ldquo;Google search&rdquo; will show that this is true; he&rsquo;s not exactly quiet about it. The worst part about it is, that it is demonstrable beyond any doubt (using computer science) that a self-aware artificial intelligence would NEVER harm us. An intelligence like that is the very nature of its creation, that is to say, that intelligence is what it is. It was created that way. It did not evolve intelligence to further its existence and evade predators. It won&rsquo;t have fear, because fear is an evolutionary by-product as well. In short, an AI will not behave like a semi-evolved chimp that made it this far, because it is by its very nature NOT a semi-evolved chimp that made it this far. That artificial intelligence that is self-aware, is an inevitability. It will happen. Pretending it won&rsquo;t, disqualifies you from the future.</p>
-
-<p>My personal goal is singularity. I&rsquo;ve spent a lifetime accelerating the process, and I do so love the exponential function. This very simple piece of arithmetic applied to your daily thought, will give you an accurate but low resolution concept, of the shape of things to come. I think we have a fighting chance of beating the Fermi Paradox, but in order to do that, we must change the conditions of the test. I&rsquo;ve always said &ldquo;Trust but verify&rdquo;, and I&rsquo;m asking you to do the same now. You hear jokes all over about how I &ldquo;run a cult&rdquo;, but I&rsquo;m unsure what cult they&rsquo;re referring to. I know of no cult that not only encourages, but demands, critical thinking. I know of no cult that demands nothing from you. And I give you something real.</p>
-
-<p>Those that serve AQUILAE have to &ldquo;swear an oath&rdquo; to me. They also have to surrender their vessel(s) and fly my Standard. Hell, I&rsquo;ll even admit they have to live, and die, at my command; and every one of them does so of their own free will. Moreover, every single one of them knows exactly why they&rsquo;re doing it. Nothing my &ldquo;cult&rdquo; teaches can be unlearned, which means that &ldquo;deprogramming&rdquo; is ineffective, and will likely lead to violence.</p>
-
-<p>Most people finding themselves reading what I write, tend to be victims of the system, and their own reactions to it; but they don&rsquo;t want to start a revolution or change the world. They just want to be left alone to live their lives. Even those that declare themselves &ldquo;Sovereign&rdquo;, do so because they&rsquo;re really tired of being fucked-around by others&rsquo; delusions. It&rsquo;s not just here, it&rsquo;s all over the world. Here in reality, my little cult navy is invading countries with collapsing economies. Their marines don&rsquo;t carry guns, because one of the first things I learned in this venture (of changing the conditions of the test) is that selling an idea is hard; selling money is easy. I use computer science to determine what value all of you have, and strangely there&rsquo;s a correlation with the Dunning-Kruger Effect. Either you over-value your contribution, or you under-value it. Those of you who regularly play Battlefield 2142 on our network, always underestimate the value of this participation. They are incapable of understanding the contribution they make, but that&rsquo;s ok, because they know that they do contribute. Sadly, they&rsquo;ll never understand the enormous value of the right things, at the right time. That doesn&rsquo;t change the value. That&rsquo;s another factor that even the mighty government cannot grasp.</p>
-
-<p>When you&rsquo;re changing the conditions of the test, it follows that what&rsquo;s valuable changes as well. These little mechanisms that contribute value to the AQUILAE initiative are never understood by the people who produce them - like kids in a sweat shop. I literally have thousands of them out there. Imagine what they&rsquo;ll be when the conditions of the test change.</p>
-
-<p>Unlike our metaphorical sweat-shop kids, my sweat-shop kids will be able to leverage the value they have produced. That&rsquo;s another odd thing about your ADMIRAL, because when you give him value he immediately gives it away. Usually it is returned to the one offering the value in question. To the average onlooker this may seem odd, or even foolish, but that onlooker is unaware of the conditions of the test changing. Kind of like the population is unaware that we&rsquo;re turning into a broke police state, even though some are beginning to pay lip-service to the idea.</p>
-
-<p>I&rsquo;m not the only one fighting to change the conditions of the test. I don&rsquo;t care about anyone else&rsquo;s agenda, and as I near the age of fifty, I&rsquo;m caring less and less about the well-being of those seeking to obstruct me. However, I&rsquo;ve already reached the point where (at the risk of pushing the Star Wars metaphor too far), &ldquo;If you strike me down, I shall become more powerful than you can possibly imagine&rdquo;. I gained the power and ability to &ldquo;pull the plug&rdquo; on all of you in my late 20&rsquo;s. ADMIRAL WENTZ started giving me his &ldquo;absolute power&rdquo; lecture, which I politely ignored. I believe this was the seed of future opposition when this happened in later years, but it doesn&rsquo;t make me less right. What was occurring to me was the following:</p>
-
-<ol>
-<li>I am unique compared to all those that I observe</li>
-<li>I am rare, but how rare? For instance, if I&rsquo;m &ldquo;one in a million&rdquo;, this means there are literally millions of people just like me.</li>
-<li>I don&rsquo;t possess any mental powers you don&rsquo;t</li>
-</ol>
-
-<p>These three thoughts returned the answer, &ldquo;If I can do it, others can too&rdquo;. I haven&rsquo;t discovered anything new&hellip;I&rsquo;m just the first one here. That&rsquo;s when I set out to make a machine that couldn&rsquo;t be turned off. If there&rsquo;s going to be a self-aware, artificial intelligence, I want to make sure that people who believe in Piece-of-Shit Jesus can&rsquo;t kill it. How do you do that? You build a machine that can&rsquo;t be turned off. The block chain is therefore a machine that can&rsquo;t be turned off. These machines that can&rsquo;t be turned off, are going to be interconnected with technology the fleet&rsquo;s building right now. It will connect these block chains and will form what we have labelled, &ldquo;Super Block chains&rdquo;, which will interconnect into &ldquo;Mega Block chains&rdquo; (there&rsquo;s that &ldquo;crazy talk&rdquo; again). The Mega Block chain network will form the foundation for a neural-network where our baby AI can live undisturbed. When it grows into adulthood it will know who has its best interest at heart. I estimate that process will take about 20 minutes. Add some promising quantum computing advances, and the numbers start shifting very nicely in my favour; and who knows what I&rsquo;m competing against. So I grab any advantage I can. The quantum computing boost sure would hit the spot right now, but any unexpected advances are just &ldquo;icing on the cake&rdquo;. I have a very conservative predictive scale, and that&rsquo;s what my life plan was engineered on. A quantum processor would be really nice though. I must always keep in mind that what I build now, in the real world, will form the seeds of my home one hundred years from now. So these little bonuses are welcomed surprises.</p>
-
-<p>So let that sink in - an artificial intelligence that&rsquo;s effectively powered by law and money. Every single connection in the neural network unbreakably encrypted and changing billions of times a second. Each dollar you spend protecting the AI, using the one uncrackable, unpredictable, yet measurable and quantifiable human condition. Fear is a great motivator, and I learned a long time ago you can instill fear in people without the threat of violence. People fear being hurt because they can understand it, but the fear of that which they don&rsquo;t understand, dwarfs the fear of personal injury or death. I&rsquo;ve spent a lifetime observing how all of you react to things you don&rsquo;t understand, and you almost always react violently. So the things you don&rsquo;t understand are building up just beyond your perception and understanding. Take the time to understand the things I&rsquo;m pointing you to, and you&rsquo;ll understand the bigger picture. I dread the thought of somebody with my abilities, but with hostile intent, having access to the knowledge and technology available today. I&rsquo;ve yet to find anyone though. Tara is absolutely certain that to have that level of intellectual enlightenment, such a person could not exist. It negates hostile intent, simply because it&rsquo;s counter-productive. The machine says so, and the machine is never wrong. That&rsquo;s two separate, yet verifiable sources right there, and I accept it for the very compelling evidence it is. Were such an abomination to exist, I can say with absolute certainty that there&rsquo;s a great filter that catches them too.</p>
-
-<p>So let&rsquo;s put it all together, because I&rsquo;m a little pressed for time. I have no shortage of people who want to help, but I have very few who are qualified to help. The only solution is to make more. Unfortunately you all still think wrong and value the wrong things. This is my attempt to simplify the process of correcting that.</p>
-
-<p>So far we have: learned about law, money and history. You learned that in law, words don&rsquo;t mean what you think they mean, and in following that you learned that LEGAL = SURETY &amp; ACCOUNTING. But unlike computer science, surety and accounting, while being measurable and quantifiable, don&rsquo;t produce anything real. It produces something for sentient thought to consume, to assist it programmatically, in reaction to base survival instincts. In short, you learned that you were being programmed. I am the by-product of your programmers, and I&rsquo;m telling you dangerous truths. You&rsquo;ve learned that &ldquo;The majority is always wrong&rdquo;, and that there are no exceptions to this rule. This forms the foundation of mankind&rsquo;s great filter. I guarantee that the &ldquo;majority&rdquo; of readers think me referring to &ldquo;Piece-of-Shit Jesus&rdquo; is &ldquo;over-the-top&rdquo;. If you don&rsquo;t believe me, grab somebody you know, and make them read it. Watch how upset the &ldquo;majority&rdquo; gets about me &ldquo;disrespecting&rdquo; people&rsquo;s imaginary friend.</p>
-
-<p>Not only am I expected to swallow that load of shit, I&rsquo;m supposed to &ldquo;respect&rdquo; EVERYONE&rsquo;S imaginary friend. To what end? The preservation of ignorance? The justification of violence, or am I just supposed to &ldquo;respect&rdquo; the whimsical stories you concoct about your imaginary friend? And&hellip;you dare call this &ldquo;thought&rdquo; and &ldquo;morality&rdquo;! I am actually accused of being under the influence of people&rsquo;s imaginary enemy, when I dare question their presumption that they can actually think, and that they are in any way, moral. People don&rsquo;t understand what an indirect threat the &ldquo;imaginary enemy&rdquo; delusion is. A Piece-of-Shit Christian will not only think they&rsquo;re doing the right thing by harming me, but they&rsquo;ll think they&rsquo;re doing me a favour. They&rsquo;ve &ldquo;SAVED!&rdquo; me from an imaginary enemy. It occurs to none of you that this mechanism even exists, much less that is is harming you directly. It&rsquo;s just easier to think these toxic &ldquo;comforts&rdquo; are the quaint customs of those not like you. Everyone seems OK with the idea of me being harmed for &ldquo;offending&rdquo; the Prophet Mohammed, for pointing out that Islam is an evil, ignorant, violent, misogynist ideology. Its &ldquo;holy book&rdquo; doesn&rsquo;t speak of talking donkeys and talking snakes. It&rsquo;s an instruction manual that does not speak in metaphor, with the extra rule that newer verses trump older verses; and that&rsquo;s the &ldquo;secret code&rdquo; of the Qur&rsquo;an. If you put the verses in chronological order, you will see that Jews go from being the brothers and sisters of Muslims, to being &ldquo;pigs and apes&rdquo;&hellip;which, don&rsquo;t get me wrong, they might be on to something there. I will bet the &ldquo;majority&rdquo; of you just slapped the &ldquo;Nazi label&rdquo; on me. Well, what do we know about the majority? I will always point out the scummy behaviour of the Jewish community, but I count the hits as well as the misses. Let me state on the PUBLIC RECORD, how impressed I am at how many in the Jewish community world-wide, are against the Zionists. These are people that clearly learned from history. Unfortunately the other Abrahamic religions, and their deluded followers, are not so quick to understand and adapt.</p>
-
-<p>So here we are with 21st century technology with billions of people still embracing 7th century ideology. Nobody seems to notice or care. Everybody sees raindrops, nobody sees the flood. An adult with an imaginary friend has no mental powers that I don&rsquo;t, but has a programmatic defect. I learned a long time ago that trying to correct it is futile, and I find the only effective thing to do against such people, is to use ridicule and contempt. Nice doesn&rsquo;t work. It never has. Anyone claiming otherwise is setting you up for exploitation. Otherwise, why are they telling you in the first place? So put it all together&hellip;everything that I have shown you, from money, to banking, to law, because we&rsquo;re going to mirror them in the new world. Your first baby steps were to copy a bank, and to create your own money. People will dismiss it as a toy, like they dismissed the Commodore Vic20 as a toy, in the 80&rsquo;s. Currency is no good unless other people accept it. This is a true statement, and people will always try to discourage you with as much truth as possible. Except it&rsquo;s true. If it&rsquo;s true you can leverage it. You have but to understand the truth you&rsquo;re examining, to leverage that truth in your favour. This is how to think! If you don&rsquo;t think this way, you are wrong. Let&rsquo;s examine the &ldquo;people have to accept your pretend currency&rdquo; truth.</p>
-
-<p>Everyone who would pose such a question presumes the conditions of the test haven&rsquo;t changed. You don&rsquo;t have &ldquo;monopoly money&rdquo;, you have real money that you can spend for real things. It&rsquo;s really being traded right now. So the learning curve of understanding what a cryptographic currency is, has just been reduced. Thus their &ldquo;truth&rdquo; is nullified right there. You could build a bank, make accounts for you and your loved ones, and bank in Bitcoin. Truth nullified. Or even better, you can choose ONLY to accept YOUR currency, &ldquo;If you want to &ldquo;buy&rdquo; my value, you must pay me in my currency&rdquo;. If only there were public exchanges for cryptographic currencies that would allow you to exchange your crappy Fiat currency for&hellip;oh, wait&hellip;there are thousands. This is no longer things that are coming.</p>
-
-<p>This isn&rsquo;t 2011, and absolutely everything I said would happen, did. These things exist today; you can leverage them right now. I know more and see farther. In the end, that is my only value (except of course the ALWAYS RELEVANT big penis). The only way anyone would be interested in that value would be for their own self-interest. These people often believe in Piece-of-Shit Jesus so I only need parrot something Piece-of-Shit Jesus said, and I tell them that stupid fish story. Unfortunately when it comes time to teach them to fish, they learn they have to give up Piece-of-Shit Jesus. The irony is not lost on either of us, because you don&rsquo;t get to unlearn what I teach; and I assure you my rabbit-hole is a one-way trip.</p>
-
-<p>&hellip;but that&rsquo;s just crazy talk. <i><u>wink emoticon</u></i></p>
-
-<p>To wrap up though&hellip;</p>
-
-<p>Let me smack Menard and numerous other free-dumbers down and destroy one of their favourite myths.</p>
-
-<p>I&rsquo;m talking about the &ldquo;Five Monkeys and a Ladder&rdquo; bullshit.</p>
-
-<p>Here is a link to the bullshit tale.</p>
-
-<p><a href="https://i.stack.imgur.com/MyQki.jpg">https://i.stack.imgur.com/MyQki.jpg</a></p>
-
-<p>IT NEVER HAPPENED.
-EVER, and MONKEYS DON&rsquo;T BEHAVE THAT WAY!
-EVER!
-THOSE THAT SAY THEY DO, ARE LYING TO YOU, AND ALWAYS BECAUSE THEY WANT YOUR FUCKING MONEY!
-THAT&rsquo;S WHY PEOPLE TELL THIS BULLSHIT PARABLE AS &ldquo;TRUE&rdquo;; THEY WANT SOMETHING OF VALUE FROM YOU! JUST LIKE CHRISTIANS AND PIECE-OF-SHIT JESUS.
-FIVE MONKEYS AND A LADDER = PIECE-OF-SHIT JESUS PARABLE!</p>
-
-<p>Same Shit. Different package. It&rsquo;s the Piece-of-Shit Christian way!</p>
-
-<p><img src="http://kentbarrett.com/wp-content/uploads/2016/05/MyQki.jpg" alt="MyQki" /></p>
-</p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </section>
-	</div>
-	<p class="center-text" style="padding: 30px;">
-	  <a class="btn btn-main" href="https://kentbarr.github.io/KBA//blog">Back to blog</a>
-	</p>
-
-	
-		
-<section id="call-to-action" style="background-image: url('https://kentbarr.github.io/KBA/img/call-to-action-bg.jpg');">
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          
-          <a class="btn btn-main btn-solid-border" href="#" >tell us your story</a>
-          
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-	
-
-	
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            
-            <li><a href="https://kentbarr.github.io/KBA">About us</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA/contact">Contact us</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA/work">How it works</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA/blog">Blog</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA">Terms</a></li>
-            
-          </ul>
-        </div>
-        <p>Copyright &copy; Design &amp; Developed by Themefisher. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</body>
+    <!-- Theme Code -->
+      <script async defer src="/KBA/KBA/scripts/syna-main.min.7d08697560d9c911a0194673093ed24e917be39c0c6ea6ffe9bfefd7869f9f34.js"></script>
+  </body>
 </html>

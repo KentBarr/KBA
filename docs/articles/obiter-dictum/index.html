@@ -1,326 +1,413 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en-us">
+  <head>
+  <meta name="theme" content="Syna">
+  <meta name="theme-version" content="v0.15">
+  <meta name="theme-url" content="https://syna.okkur.org">
+  <meta name="theme-description" content="Highly customizable open source theme for Hugo based static websites">
+  <meta name="theme-author" content="Okkur Labs">
+  <meta name="theme-author-url" content="https://about.okkur.org">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta name="google" value="notranslate">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" content="">
+  <meta property="og:title" content=" &amp;middot; Kent Barrett Art">
+  <meta property="og:url" content="https://kentbarr.github.io/KBA/articles/obiter-dictum/">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="Kent Barrett Art">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content=" &amp;middot; Kent Barrett Art" />
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="https://kentbarr.github.io/KBA/articles/obiter-dictum/" />
+    <meta property="og:image" content="">
+    <meta name="twitter:image" content="">
+  
 
+  <meta name="generator" content="Hugo 0.55.6" />
 
+  <title> &middot; Kent Barrett Art</title>
 
+  <!-- Theme Styles -->
+  <style>
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
 
+ 
+@-ms-viewport {
+  width: device-width; }
 
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar; }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 540px;
+  max-width: 720px;
+  max-width: 960px;
+  max-width: 1140px; }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
 
-<title></title>
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
 
-<meta name="generator" content="Hugo 0.55.6" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/owl.carousel.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/ionicons.min.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/animate.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/syntax.css" />
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/venobox.css" />
-<!-- Main Stylesheet -->
-<link rel="stylesheet" href="https://kentbarr.github.io/KBA/css/style.css" />
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
 
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%; }
 
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none; }
 
-<script src="https://kentbarr.github.io/KBA/js/jquery-1.10.2.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/bootstrap.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/owl.carousel.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/plugins.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/venobox.min.js"></script>
-<script async src="https://kentbarr.github.io/KBA/js/main.js"></script>
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
 
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
 
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%; }
 
-</head>
-<body>
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
 
-	
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.order-first {
+  order: -1; }
+
+.order-last {
+  order: 13; }
+
+.order-0 {
+  order: 0; }
+
+.order-1 {
+  order: 1; }
+
+.order-2 {
+  order: 2; }
+
+.order-3 {
+  order: 3; }
+
+.order-4 {
+  order: 4; }
+
+.order-5 {
+  order: 5; }
+
+.order-6 {
+  order: 6; }
+
+.order-7 {
+  order: 7; }
+
+.order-8 {
+  order: 8; }
+
+.order-9 {
+  order: 9; }
+
+.order-10 {
+  order: 10; }
+
+.order-11 {
+  order: 11; }
+
+.order-12 {
+  order: 12; }
+
+.offset-1 {
+  margin-left: 8.33333%; }
+
+.offset-2 {
+  margin-left: 16.66667%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.offset-4 {
+  margin-left: 33.33333%; }
+
+.offset-5 {
+  margin-left: 41.66667%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.offset-7 {
+  margin-left: 58.33333%; }
+
+.offset-8 {
+  margin-left: 66.66667%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.offset-10 {
+  margin-left: 83.33333%; }
+
+.offset-11 {
+  margin-left: 91.66667%; }
+
+.d-none {
+  display: none !important; }
+
+.d-inline {
+  display: inline !important; }
+
+.d-inline-block {
+  display: inline-block !important; }
+
+.d-block {
+  display: block !important; }
+
+.d-table {
+  display: table !important; }
+
+.d-table-row {
+  display: table-row !important; }
+
+.d-table-cell {
+  display: table-cell !important; }
+
+.d-flex {
+  display: flex !important; }
+
+.d-inline-flex {
+  display: inline-flex !important; }
+
+@media print {
+  .d-print-none {
+    display: none !important; }
+  .d-print-inline {
+    display: inline !important; }
+  .d-print-inline-block {
+    display: inline-block !important; }
+  .d-print-block {
+    display: block !important; }
+  .d-print-table {
+    display: table !important; }
+  .d-print-table-row {
+    display: table-row !important; }
+  .d-print-table-cell {
+    display: table-cell !important; }
+  .d-print-flex {
+    display: flex !important; }
+  .d-print-inline-flex {
+    display: inline-flex !important; } }
+
+.flex-row {
+  flex-direction: row !important; }
+
+.flex-column {
+  flex-direction: column !important; }
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important; }
+
+.flex-column-reverse {
+  flex-direction: column-reverse !important; }
+
+.flex-wrap {
+  flex-wrap: wrap !important; }
+
+.flex-nowrap {
+  flex-wrap: nowrap !important; }
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important; }
+
+.flex-fill {
+  flex: 1 1 auto !important; }
+
+.flex-grow-0 {
+  flex-grow: 0 !important; }
+
+.flex-grow-1 {
+  flex-grow: 1 !important; }
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important; }
+
+.flex-shrink-1 {
+  flex-shrink: 1 !important; }
+
+.justify-content-start {
+  justify-content: flex-start !important; }
+
+.justify-content-end {
+  justify-content: flex-end !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.justify-content-between {
+  justify-content: space-between !important; }
+
+.justify-content-around {
+  justify-content: space-around !important; }
+
+.align-items-start {
+  align-items: flex-start !important; }
+
+.align-items-end {
+  align-items: flex-end !important; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.align-items-baseline {
+  align-items: baseline !important; }
+
+.align-items-stretch {
+  align-items: stretch !important; }
+
+.align-content-start {
+  align-content: flex-start !important; }
+
+.align-content-end {
+  align-content: flex-end !important; }
+
+.align-content-center {
+  align-content: center !important; }
+
+.align-content-between {
+  align-content: space-between !important; }
+
+.align-content-around {
+  align-content: space-around !important; }
+
+.align-content-stretch {
+  align-content: stretch !important; }
+
+.align-self-auto {
+  align-self: auto !important; }
+
+.align-self-start {
+  align-self: flex-start !important; }
+
+.align-self-end {
+  align-self: flex-end !important; }
+
+.align-self-center {
+  align-self: center !important; }
+
+.align-self-baseline {
+  align-self: baseline !important; }
+
+.align-self-stretch {
+  align-self: stretch !important; }
+</style>
+
+  <link href="/KBA/style.min.c5801db8f5f1873eec776c1a8b4f6d85bfe4d01781ecf7d3e9510b95a7b64918.css" rel="stylesheet">
+
+  <script>
+    window.syna = {
+      
+    };
+  </script>
+  <script src="/KBA/KBA/scripts/syna-head.min.bb34bad09b42b3febef27ef9976fc5d5c34c8f199549c80f2bfb0a6ecc2586e2.js"></script></head>
+<body class="bg-secondary">
+    <div id="react"></div>
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header row mx-0">
+              <div class="modal-title col px-0">
+                <h5 class="title text-dark"></h5>
+                <h6 class="subtitle text-secondary"></h6>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
               </button>
-              <a class="navbar-brand" href="https://kentbarr.github.io/KBA/">
-                <img src="https://kentbarr.github.io/KBA/img/logo.png" alt="Kent Barrett Art Logo">
-              </a>
             </div>
-            
-
-            
-            <div class="collapse navbar-collapse" id="navigation">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://kentbarr.github.io/KBA/">Home</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/articles">Articles</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/work">Artwork</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/blog">Blog</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/service">Service</a></li>
-                
-                <li><a href="https://kentbarr.github.io/KBA/contact">Contact</a></li>
-                
-              </ul>
+            <img src="" alt="" class="img-fluid">
+            <div class="modal-body p-3">
+              <div class="badge-container"></div>
+              <div class="content"></div>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
-
-	<div class="post">
-	  
-	  <section class="section" style="border: 1px dotted #ddd;">
-	    <div class="container">
-	      <div class="row">
-	        <div>
-	          <div class="block">
-							
-	            <h1></h1>
-	            <div class="post-info-wrapper">
-	              <p class="italic">By <span class="bold"></span> on <span class="bold">Jan 1, 0001</span></p>
-	            </div>
-	            <hr />
-	            <p><p><strong>THE TENDER FOR LAW: <em>Obiter dictum:</em> MEADS v. MEADS FOR IDIOTS &copy; 2015 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.</strong></p>
-
-<p>It&rsquo;s time to stir the pot - disturb some shit as it were, stoke the fire, prime the forge, enrich uranium in a centrifuge, shit like that. In order to accomplish this noble goal I&rsquo;m going to do something that, on the surface, seems disgusting. I&rsquo;m going to arm the FREE-DUMBERS WITH THE KNOWLEDGE TO CRUSH MEADS V. MEADS. If you&rsquo;re really lucky, I&rsquo;ll try to squeeze in some &ldquo;Nazis&rdquo; too. If this seems a little &ldquo;rushed, it&rsquo;s because this was published BY APPOINTMENT!</p>
-
-<p>APPOINTED BY: BUSINESS, None of your Fucking.</p>
-
-<p>[Please be patient with typos, and spelling, as it was dictated to very tired women. We are going through it and fixing it when we have the time.]</p>
-
-<p>As the ADMIRAL of &ldquo;War and Knowledge&rdquo;, this shit is second-nature to me; but it occurs to me that it might not be obvious to you. The thing is, I, like you, am just a semi-evolved chimp that made it this far. I don&rsquo;t possess any mental powers that you don&rsquo;t, and none of what I&rsquo;m telling you is hidden.</p>
-
-<p>As most of you are aware, the entire JUDICIARY across CANADA cringes when they hear the name &ldquo;Scott Duncan&rdquo;; and NOTICE OF MISTAKE has been particularly effective in fighting these parasites. So why does my shit work, and that of the FREE-DUMBERS does not? Simpletons in the GOVERNMENT and the FREE-DUMBERS alike, often try to equate my value system with that of the FREE-DUMBERS. It doesn&rsquo;t take long to find out this is not true, but few people make the effort. No matter. At this particular phase in the engagement, it&rsquo;s largely irrelevant what these people think.</p>
-
-<p>I have become a bit of a problem in the past decade, and the LAW SOCIETY&rsquo;s &ldquo;Empire Strikes Back&rdquo; (I&rsquo;m A New Hope&hellip;get it?) is Meads v Meads, declaring a FREE-DUMBER&rsquo;s arguments nonsensical and literally MAKING UP A NAME/LABEL out of thin air (&ldquo;OPCA Litigant&rdquo;), and declaring Mr Meads was &ldquo;one of those&rdquo;. If I was in that JUSTICE&rsquo;s position I would have done it too. There is absolutely no chance of APPEAL without the very arguments in question being nullified. Only a PERSON can be a PARTY in a LEGAL ACTION, and Mr Meads is DENYING that he is a PERSON in the matter before the court. You will remember the JUSTICE OF THE PEACE saying to KOOK OF GAIA, &ldquo;You are either him, or you are his AGENT&rdquo;. Keep in mind that the courts will try to tell as much truth as they possibly can. The SUPERNUMERARY position of a JUSTICE allows a JUSTICE to be an &ldquo;activist&rdquo;. JUSTICE Ian NORDHEIMER (Judge*), JUSTICE Lauren MARSHALL and JUSTICE Susan HIMEL are good examples. These &ldquo;JUSTICES&rdquo; have demonstrably made a concerted effort to make sure the lie of the LAW SOCIETY affects people in the real world as little as possible.</p>
-
-<p>I hold my title as ADMIRAL because it was bestowed upon me by the very CAPTAINS I command. A JUSTICE is an unaccountable sub-contractor that tries to pass themselves off as the same thing as me. When AUTHORITY is bestowed on you, and you ACCEPT the honour, then those whose AUTHORITY is PRESUMED are, by their very nature, OFFENSIVE. That&rsquo;s the nicest thing you&rsquo;ll ever hear me say about a JUSTICE&hellip;so cherish this moment.</p>
-
-<p>&hellip;I digress.</p>
-
-<p>So RESERVING MY RIGHT to pander to Star Wars fans as well as Trekkers, I intend this article to be my &ldquo;Return of the Jedi&rdquo;.</p>
-
-<p>Meads v Meads! It&rsquo;s the &ldquo;Death-Star&rdquo; of the FREE-DUMBERS! When this fucker came out it rocked the FREE-DUMB World. The &ldquo;Death-Star&rdquo; blew up Alderan! The FREE-DUMBERS won&rsquo;t shut up about it, and there appeared to be no hope. The two heroes, Menard and Clifford, were shown to be &ldquo;mistaken&hellip;about a great many things&rdquo;. Meanwhile the evil pirate, BOBA SCOTT, was laughing at just how fucking right he is (as he does). Well &ldquo;Suck it Lucas!&rdquo;, I can rewrite this story better than you ever could. You sold Star Wars to DISNEY, so there&rsquo;s my Nazi angle (no really&hellip;look it up). I think I&rsquo;ll make BOBA SCOTT the hero now! You won&rsquo;t need a big-ass rebel fleet, you won&rsquo;t have to put innocent people in harm&rsquo;s way, or blow shit up (&hellip;don&rsquo;t get me wrong&hellip;every once in a while, I like to indulge.), and we can reduce our bloodshed to a minimum. Bloodshed is only useful when the people shedding blood have no money. Otherwise, it&rsquo;s just bad for business.</p>
-
-<p>If you don&rsquo;t have money, MAKE SOME. I showed you how to, YEARS ago.</p>
-
-<p>I have spent these past few years showing you how the LEGAL SYSTEM works, and now I&rsquo;m going to give you a glimpse into how the PRIVATEER economy works. As of this writing, there are more pirates and privateers on the seas today, than there have been in ALL OF RECORDED HISTORY, combined. Aside from Somali pirates, you never hear about them, but if you go looking for them, you can see they&rsquo;re clearly there. So how do they sustain themselves? This is a very important question as all of you are seeking FREEDOM or LIBERTY. Notice I said &ldquo;or&rdquo;. You can&rsquo;t have both. I want you to pay attention to that mechanic, because it applies in court the same way it applies in my NAVY. Why? Because they&rsquo;re the same fucking thing. It&rsquo;s ADMIRALTY MARITIME LAW. It actually works, if everybody follows the fucking rules. Do you think Irene Gravenhorst would give a shit about ADMIRALTY MARITIME LAW if the ADMINISTRATORS of that law actually kept their word? Those of you who benefit from ADMIRALTY MARITIME LAW are disgustingly ignorant of how much they owe the natives of NORTH AMERICA. I have no stake in this land, and ethically I have no problem with the concept of this land being taken from you by force and returned to the natives. The only laws on the books regarding natives should be new and creative ways to leave them the fuck alone. We could make it a National Tradition every year - new and interesting LEGISLATION which assists and BENEFITS you to leave them the fuck alone. If you&rsquo;re a JUSTICE or a PIECE-OF-SHIT from the LAW SOCIETY and you&rsquo;re reading this, pay very close attention, because the very same law that makes &ldquo;Meads v Meads&rdquo; valid, also means that by default, you owe a very, very large debt to the native population of this land. You don&rsquo;t get to have it both ways; Unless you are just going to throw away any remaining pretense, and declare everyone with a PERSON, a slave.</p>
-
-<p>Let&rsquo;s just lay this out in the open so everybody can hear.</p>
-
-<p>You, of the LAW SOCIETY, have a bit of a problem. Snake Oil Salesman of the Menard/Clifford ilk, have taken the Alex Jones position to heart; Tell as much truth as you can, but leave room to intertwine your own lies. This isn&rsquo;t new, virtually every religion does this too. Except the truths told by the likes of Clifford and Menard, are obvious and self-evident to anyone who reads what either of them has to say. This becomes a problem as truth is not exactly welcome in the post-1982 JUDICIARY, which relies on PRESUMPTION and FAITH. TRUTH is corrosive there. I used to say that Robert Menard tells the truth about law, and effectively lies through ommision; this is no longer the case. He used to eloquently lie through omission, but I like to think I showed the world how to call him on his bullshit, and now he&rsquo;s out begging for loose change, while HER MAJESTY is aggressively &ldquo;inviting&rdquo; him back to court. Sorry, but in this version of Star Wars, the Han Solo character goes down painfully, while BOBA SCOTT chuckles in delight (Fuck, this a way better story! Suck it, Lucas!). Dean Clifford (the Luke Skywalker character), has a secret rebel base known throughout the empire as the &ldquo;Fortress of Remand&rdquo;! Alas his fate is not so good either. The only cool character is BOBA SCOTT, who is a privateer and bounty-hunter, who has a rapidly growing army of disposable&hellip;um, SIMU- &hellip;CLONES (something totally different, honest. It&rsquo;s just a story&hellip;really!).</p>
-
-<p>&hellip;I digress.</p>
-
-<p>Let&rsquo;s blow up The Death Star! But first, let me state some more unexpected shit. FREE-DUMBERS and Piece-of-Shit Christians alike are going to hate this next sentence. Meads vs Meads was the correct LEGAL, LAWFUL, and ethical, RULING on the matter before the court. That&rsquo;s not a typo, and I don&rsquo;t want anyone to think they misread what I just wrote.</p>
-
-<p>As everyone knows, the #1 Rule of the Universe is: SCOTT IS ALWAYS RIGHT. As you appear to be reading this article, it&rsquo;s safe to assume the universe is currently intact. Since the #1 Rule of the Universe is in fact: SCOTT IS ALWAYS RIGHT, the statement that &ldquo;Meads vs Meads was the correct LEGAL, LAWFUL, and ethical, RULING on the matter before the court&rdquo;, must, by its very nature, be correct. If you don&rsquo;t accept that, stop reading now because you are incapable of comprehending anything that I have to say. I have also told you that you can save yourself a lot of time by presuming that I&rsquo;m right, and investing the effort saved, into figuring out WHY I&rsquo;m always right (SPOILER: I have THE ANSWER TO EVERYTHING). So let&rsquo;s save ourselves some time and presume that I&rsquo;m right when I say &ldquo;Meads vs Meads was the correct LEGAL, LAWFUL, and ethical, RULING on the matter before the courts&rdquo;. Let&rsquo;s figure out WHY I&rsquo;m right. Remember to avoid focusing on the data, and to focus on the mechanics of what I&rsquo;m describing. Once you focus on the mechanics, it&rsquo;s very easy to find the root of a problem the LEGAL MATRIX may be causing you and neutralize that. The issue before the COURT in Meads vs Meads was a DIVORCE. Mr. Meads in no way contested this fact, and his RIGHTS to do so cover a very, very, narrow scope. He did not have the RIGHT to challenge the COURT&rsquo;S JURISDICTION because in order to get a DIVORCE, you must first get MARRIED. To get MARRIED in CANADA you must first get a MARRIAGE LICENSE. A LICENSE is PERMISSION to perform an ILLEGAL AND/OR UNLAWFUL ACT. In COMMON LAW JURISDICTIONS it is UNLAWFUL to MARRY without the GOVERNMENT&rsquo;s PERMISSION. You are only the BENEFICIARY of the PERSON bearing your LEGAL Name. You are the LAWFUL HOLDER IN DUE COURSE of that PERSON, and you don&rsquo;t get to interfere with the COMMERCE of another PERSON. All SERVICES regarding the PERSON are not for you, they&rsquo;re for THE LAW SOCIETY. You ACCEPTED a TENDER FOR LAW as soon as you used that NAME to BENEFIT in any way.</p>
-
-<p>There are very few people on this planet that understand computers as well as I do. This is not bragging, this is just a fact. Despite having the massive knowledge that I do, I could not go out into the woods with an axe (which could plausibly be a gift, and therefore outside of COMMERCE) and ever hope to send you an email. I cannot build a computer. Babbage and Lovelace knew what to build, they just didn&rsquo;t know how to build it. Now, in 2015 you can walk around with a Terabyte of storage. I couldn&rsquo;t build any of it myself. It was one of my first observations as a youth and was literally the most terrifying thing I had ever thought of. Adults didn&rsquo;t appear to have any mental powers that I didn&rsquo;t, yet all these amazing machines exist. When I was making these observations, I couldn&rsquo;t help but conclude that the only difference between myself and them is experience. I also assumed that this was the motivation behind every adult lying to me - they had so many secrets to keep. Alas, the old adage is true; &ldquo;Never attribute to malice what can easily be explained by stupidity&rdquo;.</p>
-
-<p>Many of you are seeking &ldquo;freedom&rdquo; (Not LIBERTY), and I recall the day I was &ldquo;free&rdquo; when I said out loud: &ldquo;I&rsquo;m just smarter than they are&rdquo;. I then spent half a lifetime trying to find out why I was smarter than they are. There&rsquo;s no reason for it, I don&rsquo;t have any special mental powers, although I find it really disturbing how receptive people are to the idea that I do have special mental powers. I don&rsquo;t. I make the point as often as I can. I&rsquo;m no different than you! I simply know more than you, largely because of circumstances that I had absolutely no control over. This allowed unique circumstances that the majority of you would never encounter, much less do on purpose.</p>
-
-<p>I have been a thorn in THE LAW SOCIETY&rsquo;s side for decades. Long before the FREE-DUMBERS ever set foot in a COURT ROOM, I was terrorizing JUSTICES and LAWYERS alike. What they had to spend weeks researching, I had resting comfortably in my head. I didn&rsquo;t PRACTICE LAW, I had MASTERED it (and now I&rsquo;m kicking myself for not making this article a Doctor Who theme, as THE MASTER is WAY cooler than any Star Wars Character!) I was LICENSED to do it, and I was a key part in neutralizing JUDICIAL power grabs, in the 90&rsquo;s, and 2000&rsquo;s. I did so, because I promised to, as part of the terms that facilitated the dissolving of an earlier obligation. When I sign under oath, I follow the terms to the letter. One might even say &ldquo;religiously&rdquo;. I don&rsquo;t break the law that I paid for.</p>
-
-<p>I don&rsquo;t know LAW as well as I know Computer Science, but I know a hell of a lot more than you (and most LAWYERS, for that matter). We&rsquo;ve established that Meads vs Meads was a DIVORCE case and, even with the widest latitude, I can see no EVIDENCE that MR. MEADS ever CONTESTED the fact that the HEARING was in fact for a DIVORCE. Here&rsquo;s some LEGAL ADVICE (it&rsquo;s the only LEGAL ADVICE I am LEGALLY ALLOWED to give): At any MEETING, HEARING, COURT, or TRIBUNAL, where any MEMBER of THE LAW SOCIETY REPRESENTS any PARTY, ALWAYS ask what the HEARING is! That&rsquo;s not a confusing piece of advice. I can&rsquo;t tell you how many people call me after they&rsquo;ve been ARRESTED, and CHARGED, wondering what to do. The first thing that I always ask them is: &ldquo;when is your next COURT date?&rdquo;, and they always have an answer. When I ask the question &ldquo;What is the HEARING you are ATTENDING on that date for?&rdquo;, they never seem to have an answer. Even the mighty Fender drops the ball on this one. You may know THAT you&rsquo;re going to COURT, but you never seem to be able to answer WHY you&rsquo;re going to COURT. Why are these HEARINGS even happening? If you don&rsquo;t know what the HEARING you are ATTENDING is for, it is a virtual guarantee that some RIGHTS AND/OR PROPERTY is going to be &ldquo;LIBERATED by HER MAJESTY&rdquo;. There are no exceptions to this rule, so my LEGAL ADVICE is to CONFIRM BY QUESTIONING; &ldquo;What is the purpose of this HEARING&rdquo;? This is no different than asking &ldquo;What is the NATURE and CAUSE of this PROCEEDING?&rdquo;, which is the proper way to ask. The thing that seems lost on people who are dumb enough to say &ldquo;What is the NATURE and CAUSE of these PROCEEDINGS&rdquo; is that if you go to France and order food in a French restaurant, in French, to show off for the hot chick you&rsquo;re trying to stick your dick in, it is reasonable to presume that the waiter is going to speak back to you IN FUCKING FRENCH. You then look very silly when it turns out you&rsquo;ve memorized some French phrases that allow you to order food, and you are only pretending to be able to talk to the waiter. So stick to plain English, stop trying &ldquo;sound smart&rdquo; because it&rsquo;s offensive to people who are ACTUALLY smart (like me! ALSO: I think I&rsquo;ve accidentally stumbled onto why French waiters are rude.)</p>
-
-<p>So keep it simple: &ldquo;What is the PURPOSE of this HEARING? Am I on TRIAL? Is this a PRELIMINARY HEARING?&rdquo;. Vocalize the actual questions that should be going through your head, and make sure lots of people hear you. Because unlike idiots like Derek Moran, I don&rsquo;t walk into PUBLIC FORUMS making LEGAL DECLARATIONS, I ask questions; Questions that demand answers! If you claim you are &ldquo;SOVEREIGN&rdquo; then you should know how to PROPERLY EXECUTE your AUTHORITY, OR CEDE THAT AUTHORITY TO THE MOST QUALIFIED PARTY. I never claimed to be &ldquo;SOVEREIGN&rdquo;, and I still wield more AUTHORITY than any COURT does. If I were to attempt to wield my AUTHORITY over you, the reader, you would immediately DECLARE &ldquo;You have no AUTHORITY over me&rdquo;. This is in fact not true, as the ONLY LAWFUL CAUSE for me to COMPEL you under my AUTHORITY would be if you, the reader were in MY JURISDICTION (On an AQUILAE VESSEL, for example). As soon as you step into my JURISDICTION I have SUPREME EXECUTIVE AUTHORITY. All your DECLARATIONS to the contrary will not change that fact. You may counter that with &ldquo;But this ACT/CODE/STATUTE gives the COURT AUTHORITY&hellip;blah blah blah&rdquo; to which I can easily counter with the RULES set out in the COVENANT of the AQUILAE TRUST. In short, whatever the GOVERNMENT can produce as EVIDENCE of their AUTHORITY, I can produce better. Here&rsquo;s the thing about AUTHORITY; I have my AUTHORITY because a bunch of people with boats TRUST me. This is a FACT IN LAW that is REAFFIRMED every 90 days. It needs 100% APPROVAL from every CAPTAIN. If one CAPTAIN votes against me, the fleet MAY ELECT to have their VESSEL DECOMISSIONED. This is how every PRIVATEER NAVY is run. This is how every PIRATE NAVY is run, for that matter. It allows us, collectively, to do AMAZING things.</p>
-
-<p>What I&rsquo;ve taken a long time to establish here, is that you can&rsquo;t do all this alone. You LABOURED for some DEBT IN TRANSIT to PURCHASE the magnificent machine you are reading this text on. You know nothing about this machine or how it does what it does, and like most of the population, you believe what it says without question. As I said in THE TENDER FOR LAW (and Dan parroted) the computer is the ultimate LIMITED LIABILITY AGENT. I want you to focus on that: LIABILITY. You will need it.</p>
-
-<p>So let&rsquo;s walk through Meads vs Meads using the SURETY and ACCOUNTING you bought when you accepted the TENDER FOR LAW that MONEY provides. It can be presumed a FACT IN LAW that Meads vs Meads was a DIVORCE ACTION. The AUTHORITY behind this CAUSE OF ACTION is the MARRIAGE LICENSE two PARTIES APPLIED for, and were GRANTED. The UNLAWFUL ACT of MERGING two SECURITIES in RECEIVERSHIP is made LEGAL by a MARRIAGE LICENSE. This means you are BOUND by the RULES of that RECEIVERSHIP. Once you are GRANTED a LICENSE to perform an ILLEGAL/UNLAWFUL ACT it is very difficult to ALTER the TERMS after your APPLICATION is GRANTED. If you doubt me on this, I invite you to change the MOTOR VEHICLE ACT after you get your DRIVERS LICENSE. The two are exactly the same. A MARRIAGE is only LEGAL because it&rsquo;s LICENSED, otherwise, according to the COMMON LAW ACCOUNTING (estate), both PARTIES are SEPARATE. Returning MERGED PARTIES to a SEPARATE state is always difficult, and always comes at a price. There are no exceptions to this rule.</p>
-
-<p>DIVORCE is no different. MR. MEADS tried to change the RULES after the BENEFIT was GRANTED, and a JUSTICE seized the opportunity to prop up an illusion. So, the first thing we&rsquo;re going to clear up about Meads vs Meads is that it is NOT FUCKING CASE LAW! This whole &ldquo;CASE LAW&rdquo; lie is the most UNOPPOSED lie since &ldquo;Jesus Loves You&rdquo;, and just like &ldquo;Jesus Loves You&rdquo;, when you call people out on the lie, people get upset.</p>
-
-<p>FOR THE RECORD: Jesus does not love you. That&rsquo;s because Jesus doesn&rsquo;t exist. Things that don&rsquo;t exist, cannot, by their very nature, feel love. If jesus EVER existed (Unlikely), he was a semi-evolved chimp that didn&rsquo;t make it very far, and as such, did not live long enough to &ldquo;love you&rdquo;. See how that works?</p>
-
-<p>Those who disagree with the above facts about &ldquo;Jesus&rdquo;, mean you harm. NO EXCEPTIONS. Clear?&hellip;good.</p>
-
-<p>In MEADS v. MEADS, there was no question of LAW, nor was there an INJURED PARTY, nor was there an INFRINGEMENT OF RIGHTS, nor has the SUPREME COURT taken a look at it. Even if I were to grant the massive latitude required to allow the only &ldquo;arguable&rdquo; position MR. MEADS raised, that being one of JURISDICTION (and MRS. MEADS would totally have to be sucking my dick to get THAT kind of latitude!), the ARGUMENT is immediately NULLIFIED by the fact that HE GOT MARRIED. You don&rsquo;t get to change the TERMS of your MARRIAGE LICENSE any more than you get to change the TERMS of your DRIVERS LICENSE. This means that ASSOCIATE CHIEF JUSTICE ROOKE had an open stage to state whatever OPINION he WISHES. Here&rsquo;s the best part; he&rsquo;s not just a &ldquo;JUSTICE&rdquo;; The RECORD clearly states that he is an ASSOCIATE CHIEF JUSTICE. Kind of like a Walmart ASSOCIATE greeting you at the door. He most certainly is not an EMPLOYEE of Walmart, that would give his PERSON RIGHTS and BENEFITS. No, he&rsquo;s an ASSOCIATE.</p>
-
-<p>So when you APPLY for EMPLOYMENT at Walmart, you are immediately DEMOTED to ASSOCIATE. You CONSENTED in your EMPLOYMENT AGREEMENT. This ASSOCIATE CHIEF JUSTICE CONSENTED to be an ASSOCIATE. The &ldquo;greeter&rdquo; at Walmart is most certainly NOT Walmart, he&rsquo;s not even an AGENT of Walmart, he&rsquo;s just an ASSOCIATE. JUSTICE ROOKE isn&rsquo;t the CHIEF JUSTICE you&rsquo;re looking for, he&rsquo;s just an ASSOCIATE. Look at the RULES GOVERNING every JUSTICE and you will notice they are not shy about how UNACCOUNTABLE they are for their CONDUCT. It is difficult to question their OPINIONS at the best of times.</p>
-
-<p>Put a stick-pin here.</p>
-
-<p>Let&rsquo;s jump to the AQUILAE NAVY: You&rsquo;ll recall the Indian Ocean tsunami that killed over 200,000 people in the nation of Thailand, and our NAVY was a little tiny thing. It still did the same job back then, as we do now, but what&rsquo;s easy today was extremely difficult back then, not to mention expensive. We will never know how many lives we saved, but we DO know that we couldn&rsquo;t have done it alone. As KEEPER of THE AQUILAE TRUST, I can say without OMISSION, DISTORTION, or CONCEALMENT, that there are a myriad of NON-CONFLICTING, BILATERAL AGREEMENTS with ASSOCIATE TRUSTS worldwide, and intimately connected to AQUILAE. I live and die by those AGREEMENTS, and so does everyone else sworn to the TRUST. That&rsquo;s why it works. There&rsquo;s also huge BENEFIT. These BILATERAL AGREEMENTS allow me to call an ASSOCIATE NAVY whenever I need infrastructure in a hurry. Under those AGREEMENTS I am regarded as an ASSOCIATE ADMIRAL, or ASSOCIATE JAG OFFICER, depending on JURISDICTION/geography. Unlike the DE FACTO stooge COURTS that ASSOCIATE CHIEF JUSTICE ROOKE dwells in, my AUTHORITY is never questioned and it&rsquo;s not because I&rsquo;m such a nice guy, or my fucking boyish charm! The motivation for people OBEYING my ORDERS without question is always one of two categories; Either they understand, intimately, why I&rsquo;m issuing the ORDER, or they TRUST me implicitly. The end result is the same, so the motivation is irrelevant. This is something I can claim, but ASSOCIATE CHIEF JUSTICE ROOKE cannot. But he&rsquo;s secured his forum fair and square, and you literally do not have the RIGHT to either question him, or call him to ACCOUNT. LEGALLY or LAWFULLY, it&rsquo;s just a fact. I, on the other hand, DO have the AUTHORITY. This is an uncomfortable fact that the LAW SOCIETY is having difficulty hiding these days.</p>
-
-<p>Here in reality, the LAW SOCIETY has no RIGHT to infringe on the RIGHTS of ANYONE. When the LAW SOCIETY decided that I fell under that category of ANYONE, they didn&rsquo;t bother taking a look at the past RECORD, which to them is understandably confusing and frightening. They now realize that I had invested in a community, and made a home there, and I was expected to be left alone. They didn&rsquo;t, and now their biggest concern is the Streisand Effect, because I keep LEGALLY keep publishing stuff like this, under LICENSE. The damage is already done. Any attempt to resist my efforts draws the wrong type of attention, and gets people asking the &ldquo;wrong&rdquo; kind of questions.</p>
-
-<p>So let me give one Dogecoin worth of FREE LEGAL ADVICE to Mr. Meads and the FREE-DUMBERS; if what you seek is FREEDOM, you are simply not entitled to ACT in COMMERCE. In fact the only FREEMAN on RECORD that has ever been wrongfully PROSECUTED by the courts is one MR. JOHN SCOTT DUNCAN, XXIII. So if you&rsquo;re CLAIMING to be a FREEMAN, and you&rsquo;re NOT JOHN SCOTT DUNCAN, XXIII, then it is a FACT in LAW that I will TESTIFY UNDER OATH to, that aside from myself, there appears to be no wrongfully PROSECUTED FREEMEN. To DECLARE otherwise is simply FRAUD.</p>
-
-<p>Let&rsquo;s look at that handsome lad, JOHN SCOTT DUNCAN, XXIII. What&rsquo;s with that 23rd thing (I am not a number! I&rsquo;m a free&hellip; nope, I&rsquo;m a number. :/ )? You see, JOHN SCOTT DUNCAN is a PERSON, and all records of that PERSON do not bear my signature. In fact the FOUNDATION DOCUMENT of that PERSON has the signatures of what appears to be two AGENTS REPRESENTING a TRUST. You see, under ADMIRALTY MARITIME LAW, even the Nobility are slaves. More so for Scottish Nobility. Your BIRTH CERTIFICATE is, in FACT, a REGISTERED SECURITY, conveniently the date the SECURITY was REGISTERED, also SERVES to CERTIFY that on the REGISTERED DATE a CROWN ORGANIZATION was, in fact, ORGANIZED; and henceforth the child of unknown parentage named, JOHN SCOTT DUNCAN, was LEGALLY AUTHORIZED to BENEFIT from the COMMERCIAL TRUST, the SECURITY that is the BIRTH CERTIFICATE, represents. Why was this event recorded, and attached to a SECURITY? Because the TRUST that SECURITY represents is in RECEIVERSHIP. When you have BENEFIT, you have obligation. It is one of the foundations of CONTRACT LAW itself. There are no exceptions to this rule; and this is why the reboubtable CHIEF JUSTICE ROOKE can write such an UNIMPEACHABLE RULING. It is UNIMPEACHABLE.</p>
-
-<p>Mr. Meads is a PERSON some chimp happens to have, and the dumb chimp can&rsquo;t tell the difference between what&rsquo;s true and what feels good. If anybody wishes to BENEFIT from COMMERCE they either contribute VALUE to it, or they consume the byproducts of it. Either way, you are bound by the rules that facilitate it.</p>
-
-<p>My unfortunate life circumstances gave me the unintended benefit of understanding LAW better than any of the current players. Sadly I recall a time when there were both JUSTICES and LAWYERS that understood law as well as I do. They&rsquo;re extinct now. The COURT SYSTEM now exists to facilitate the &ldquo;Rule of Law&rdquo; when it favours GOVERNMENT. You, and your PERSON, are a burden/liability when it comes to a TRUST in RECEIVERSHIP. If you want to go the &ldquo;I am not a PERSON &rdquo; route, and expect the courts to even entertain the position, let me rejoice in your downfall now. You fucking idiot!</p>
-
-<p>So here&rsquo;s my LEGAL ADVICE, because the COURTS OF JUSTICE ACT, doesn&rsquo;t apply to any courts nowadays. You will notice in RULINGS cited in Meads v Meads, the phrase &ldquo;The time for games is over&rdquo;. Get used to that phrase; you&rsquo;re going to hear it a lot, and it will always come from a GOVERNMENT worker. The phrase itself acknowledges that the SPEAKER has, up to that point, been playing games. Let that sink in. This parasite gets paid with money taken by force, from you, and presumes the RIGHT to play games with you. Well, use their own weapons against them. If they want games, show them one game, and master it. The game is called Jeopardy. It&rsquo;s a game show that has been playing since the 1960&rsquo;s, and is single-handedly responsible for convincing the world that Alex Trebeck is smart. For those who have been living under a rock and don&rsquo;t know what I&rsquo;m talking about, the only rule in Jeopardy, is that you MUST phrase your answer in the form of a question. If you break that rule, you LOSE.</p>
-
-<p>Remember, your goal is always to form trinities. You do this by connecting two separate paths in the LEGAL MATRIX to one real-world thing. When the layman hears the words &lsquo;LEGAL TENDER&rsquo;, they automatically think money and/or currency. You have but to look at Bitcoin, or any other cryptographic currency, to see irrefutable proof that money and LEGAL TENDER are NOT the same thing. To declare otherwise makes you a useful idiot who serves the LAW SOCIETY and the banks.</p>
-
-<p>You can separate trinities that strangers form by asking questions. To understand the mechanism behind this, consider one of the few interactions you, the reader, could possibly have with me. I&rsquo;m talking about in a &ldquo;commercial&rdquo; capacity. One of the services I provide for several corporations is that of Senior System&rsquo;s Engineer. To say that I&rsquo;m good at that job, is like saying that I&rsquo;m &ldquo;ok&rdquo; at law; It&rsquo;s a gross understatement. It&rsquo;s a job I love doing, because I can make these magnificent machines do something productive - like facilitate the ideas of someone like you, the reader. This means, by default, whatever fictitious project we undertake in this example, it will be presumed fact that we are both motivated and enthusiastic about fulfilling your technological needs. This will provide momentum for any project going forward. Your first interaction with me, I will by default, NOT be qualified to fulfill the task you&rsquo;re asking. Anyone whose career touches Information Technology will agree that one of the biggest headaches in the industry is that the fucking customer has no fucking clue what they want, much less what they actually need. This is a very difficult dynamic to manage, and I find the only way to get around it is to have the client sign over absolute AUTHORITY regarding technical matters in their corporation. I demand SUPREME VETO AUTHORITY over any piece of technology that touches any infrastructure I deploy in the interest of the client. I affectionately call this the &ldquo;I know better, so shut-the-fuck-up and do what you&rsquo;re told&rdquo; clause. It virtually guarantees you will never have to buy another solution again, because as my client, I will use the AUTHORITY you signed over, to disect and have a complete and total understanding of the work-flow within your company. Everything I build is scalable to your company&rsquo;s needs. It&rsquo;s only expensive at the beginning.</p>
-
-<p>Now let&rsquo;s look at the mechanics of that. You, as my client, have indisputably the most AUTHORITY in the transaction. If I am ACCEPTING CONTRACTS, the TENDER is available, otherwise you wouldn&rsquo;t be talking to me. It is at that point you request the Terms and Conditions, whereupon you consensually surrender AUTHORITY you&rsquo;re normally entitled to. You do so because I am qualified to understand what you need. This means, that by default, you acknowledge that you are not. This also means that you have NO STANDING to question how I fulfill my obligations under our contract; and I make sure this is clear before anybody signs anything. Now transfer that mechanic to the courtroom in Meads v Meads.</p>
-
-<p>If I am performing the role of ASSOCIATE CHIEF JUSTICE ROOKE, then Mr. Meads appears, by default, as a belligerent client attempting to alter the terms of the agreement. I, as the highest AUTHORITY in this matter, recognize that the attempt to force unilateral conditions on an already-established contract, is not only LEGALLY odious, it is simply UNACCEPTABLE in even the loosest interpretation of CONTRACT LAW. Those of you more familiar with my writings, works, or commercial interests, are already familiar with my primary terms of service. I&rsquo;m referring of course to the succinct, yet elegant, &ldquo;Cash up front, or pay with your cunt&rdquo; clause; because make no misktake, if I&rsquo;m working for you in commerce, I have no stake in the outcome because I&rsquo;ve already been paid. If you can&rsquo;t find where the cash came from, look to your wife/daughter/mother because she covered your tab. Watch for her in upcoming DVD sets.</p>
-
-<p>&hellip;I digress.</p>
-
-<p>Where was I? Oh yes! &hellip;Jeopardy.</p>
-
-<p>You will lose the game of Jeopardy if you do not respond in the form of a question. Just like a CONTRACT with me is NULL and VOID if you fail to comply with your UNDERTAKINGS. If you want to change those terms and conditions you are invited to refer to the inevitably required &ldquo;Tough shit!&rdquo; clause of our CONTRACT. This effectively, was Mr. Meads&rsquo; ACTUAL LEGAL position. He wanted to change the terms of a CONTRACT HE CONSENTED TO, and ASSOCIATE CHIEF JUSTICE ROOKE referred him to the &ldquo;Fuck you!&rdquo; clause which forms the backbone of the LEGAL MATRIX. So THE JUSTICE decided to make a bunch of ad hominem attacks against Mr. Meads because he was completely LEGALLY and LAWFULLY LICENSED to do so. Mr. Meads granted him that LICENSE when he attempted to change the terms.</p>
-
-<p>Let&rsquo;s go back to me because I&rsquo;m far more interesting and smarter than Mr. Meads. The ATTORNEY GENERAL and therefore the LAW SOCIETY for which they are AGENT, have clued in that I have effectively let them do to me what they do to everyone else, because I did not IDENTIFY myself by title. They are well-aware that I have volumes and volumes of irrefutable evidence, recordings, of systemic corruption within the COURT SYSTEM, with no raindrop ever being blamed for the flood of corruption. As I have become infamous for saying, &ldquo;I&rsquo;m not one of these fucking FREEMEN&rdquo;. I run a TRUST that relies on, and pays for, the LEGAL MATRIX (it forms what you know as &ldquo;the rule of law&rdquo;).</p>
-
-<p>I did not get what I paid for. It&rsquo;s the only reason you even know my name, or have the honour of reading what I have to say. You learn things you aren&rsquo;t supposed to know, because of ME, and it&rsquo;s THEIR FAULT.</p>
-
-<p>These articles exist under the CREATIVE COMMONS LICENSE so you can UNDERSTAND what I am going to do with all this evidence I collected; because I&rsquo;m going to show you some very interesting things in 2016. I remind the LAW SOCIETY that the excuse &ldquo;typographical error&rdquo; exponentially loses its credibility and probability every time you use it. So there&rsquo;s LEGAL ADVICE&hellip;at least a Dogecoin worth, and I gave it to you for free.</p>
-
-<p>In ANTI-TRUST LAW, this is what&rsquo;s known as &ldquo;Product Dumping&rdquo;, and until the LAW SOCIETY makes reparations to the TRUST, I will continue product dumping, and valuing it at one Doge gives it way more value than it deserves. Because that&rsquo;s the one thing all the FREE-DUMB gurus keep missing. And, as I&rsquo;ve pointed out before, the pretend hero lawyers suddenly get cagey and evasive just like every other lawyer, when you mention to them, SURETY and ACCOUNTING. LEGAL = SURETY &amp; ACCOUTING. Connect that, to the fact that I value information that I am disseminating, at ONE DOGECOIN. I have now set a MARKET VALUE. That MARKET VALUE is a fucking mark-up that would make Bell Canada blush.</p>
-
-<p>This is not new advice. The reason NOTICE OF MISTAKE is so effective is that you&rsquo;re exercising your AUTHORITY by questioning.</p>
-
-<p>Returning to our hypothetical contract; As my client, you do not have the AUTHORITY to question my technological decisions. You surrendered that RIGHT, or you wouldn&rsquo;t be my client. By surrendering RIGHTS you are surrendering AUTHORITY. I now hold certain specific, and predefined AUTHORITY. I have the AUTHORITY to VETO any piece of technology that touches anything I deploy for you, so don&rsquo;t be buying the latest iPad and expect me to integrate it onto any network I deploy! If you, as my client, wish to question that, I might answer as a courtesy, but I&rsquo;m under no obligation to do so. However, let&rsquo;s say in another part of our CONTRACT you provide me an expense account, and you find that the only activity on that account, is cheques made out to CASH. You, as my client, most certainly have AUTHORITY to question that. At no time did you FORFEIT any AUTHORITY regarding your ACCOUNTING. I have nothing to do with your accounting, and I am LIABLE if I abuse it.</p>
-
-<p>The allocation of AUTHORITY in any CONTRACT is established before the PARTIES sign. One of Sino General&rsquo;s pass-times is to take credit card applications that are offered, and to read the really odious and creepy &ldquo;Terms and Conditions&rdquo;, cross them out, and write in his own conditions, or to attach an addendum with his own terms and conditions. Then he signs it, and sends back a NOTARIZED copy. If the idiots send back a credit card, they&rsquo;ve done so under his amended &ldquo;Terms and Conditions&rdquo;. It&rsquo;s not FRAUD to CONDITIONALLY ACCEPT. Sino sets the conditions and signs it. All the credit card company has to do is to endorse that, and there is no FRAUD. Here&rsquo;s where personal responsibility comes into the picture. If you don&rsquo;t like the terms and conditions of your returned offer, don&rsquo;t fucking sign! This applies to ALL PARTIES&hellip;and that&rsquo;s why Sino General is such a thorn in their sides. He&rsquo;s not doing anything ILLEGAL and/or UNLAWFUL by RETURNING the AMMENDED OFFER. Real Estate Agents do it for a living!</p>
-
-<p>Mr. Meads, on the other hand, did the equivalent of applying for a credit card, and then trying to change the terms when the first payment came up. These are positions that are not even worth considering, and sadly the term, &ldquo;vexatious litigant&rdquo; applies. This is why Meads v Meads is cited so often, because that glaring logic hole that wouldn&rsquo;t survive reality in any circumstance, is what every JUSTICE will focus attention to, thus drowning out any truth Mr. Meads may have spoken in his misguided ramblings.</p>
-
-<p>Meads v. Meads is truly the &ldquo;Death-Star&rdquo; of the FREE-DUMBERS, and BOBA SCOTT has come to the rescue. You rebels want to blow up the &ldquo;Death-Star&rdquo;, then &ldquo;Shut the fuck up and do what you&rsquo;re told&rdquo;. If you don&rsquo;t, the Empire will blast you out of the sky with their &ldquo;Death-Star&rdquo;. It exists because Meads is an idiot. The JUDICIAL equivalent of a staff writer saw an opportunity to &ldquo;make his mark&rdquo; and he took it. I&rsquo;m certainly not going to fault him for that. But remember&hellip;</p>
-
-<p>This is not CASE LAW. This is a RULING against an idiot who tried to foist conditions unilaterally on, not only a pre-existing CONTRACT, but a PERFECTED, CONSENSUAL, CONSTRUCTIVE TRUST (MARRIAGE). There are three PARTIES in a TRUST, which means there are three PARTIES in a MARRIAGE. Crave all the FREE-DUMB you want, but if you&rsquo;re part of such a TRUST, you do not get to fuck around other PARTIES, and you do not get to fuck around the TRUSTEES. So fuck your fucking FREE-DUMB!</p>
-
-<p>MEADS v. MEADS is indisputably the correct RULING. ASSOCIATE CHIEF JUSTICE ROOKE availed himself of something his Title provides him, but that is it. It is not CASE LAW. I&rsquo;m sure if I didn&rsquo;t write this article you&rsquo;d probably find Derek Moran one day making the DECLARATION that Meads v Meads is not CASE LAW, which they get to ignore. If you&rsquo;re even speaking at CITY HALL, it means you have already ACCEPTED the terms and conditions, and you don&rsquo;t get to foist unilateral CONTRACTS on anyone. The DECLARATION that Meads v Meads is not CASE LAW, while being indisputably true, is not relevant to anything being heard. Derek Moran would be better spending his time at CITY HALL making the DECLARATION that ADMIRAL SCOTT has a large penis; because as Meads v Meads is not CASE LAW is true, it&rsquo;s not really relevant. If Derek Moran DECLARES that I have a large penis (at CITY HALL), while this fact is demonstrably true, DECLARING it is also irrelevant, is wasting people&rsquo;s time, and will frequently be considered &ldquo;highly inappropriate&rdquo;.</p>
-
-<p>With that being said, I want to go ON RECORD as saying that my penis is ALWAYS RELEVANT.</p>
-
-<p>&hellip;I digress.</p>
-
-<p>&hellip;ALWAYS RELEVANT!</p>
-
-<p>&hellip;Sorry again, about myself. I digress.</p>
-
-<p>So, buried in all of this, are all the tools you need to blow up the &ldquo;Death-Star&rdquo; of Meads v Meads. I&rsquo;ve now given the FREE-DUMBERS something to fight back with. They&rsquo;re like the disposable zombie army in &ldquo;Game of Thrones&rdquo; (Seriously, five seasons went by! Why didn&rsquo;t anybody get on that?). If you&rsquo;re in jeopardy, phrase your response in the form of a question. Only those in AUTHORITY can ask questions. This is the part that all of you seem to miss regarding the wielding of AUTHORITY. As ADMIRAL of a Private Navy I wield a shit-load of AUTHORITY.</p>
-
-<p>It may come as a shock to some of you, but there are those in this world that believe that I have what can only be politely termed an &ldquo;abrasive&rdquo; personality - kind of like a GOVERNMENT worker. I wield a bunch of AUTHORITY, and I&rsquo;m a total dick about it. The difference between me and the GOVERNMENT worker in this thought exercise, is that I can make the CLAIM that people literally asked for that, and I can prove it; whereas a GOVERNMENT worker PRESUMES that RIGHT without your CONSENT. Were I to attempt to IMPOSE my AUTHORITY on you, the reader, you would probably respond violently; and you would be justified in so doing. Yet this is behaviour you find perfectly ACCEPTABLE from GOVERNMENT workers, and when I ask why this is the case, none of you have an answer.</p>
-
-<p>I can make DECLARATIONS that are demonstrably true, such as &ldquo;Meads v Meads is not CASE LAW&rdquo;, and I can make that DECLARATION with AUTHORITY. I can make that DECLARATION because I&rsquo;m qualified to do so, because the LEGAL MATRIX of the JUDICIARY, and the LEGAL MATRIX of the JUDGE ADVOCATE GENERAL, are identical. It&rsquo;s like owning a Chrysler New Yorker in 1988; everyone who knew anything about a K-car knew about your car, because underneath the label, and facade, they are exactly the same.</p>
-
-<p>You, however, do not have the RIGHT to make such DECLARATIONS. Using your LEGAL NAME for any BENEFIT obligates you to the terms and conditions attached. Some protect you, and some obligate you. For instance, like a $10 bill, your BIRTH CERTIFICATE does not belong to you. Unlike a $10 bill, you are the LAWFUL HOLDER IN DUE COURSE permanently, and the only PERSON (HER MAJESTY AND AN ORGANIZATION) with the RIGHT to use and avail yourself of the BENEFIT of the SECURITY that is the BIRTH CERTIFICATE. It says so in the CHARTER - see the parts regarding &ldquo;SECURITY OF THE PERSON&rdquo;. It&rsquo;s your RIGHT. But with RIGHTS, come responsibilities. The courts are no longer fulfilling theirs unless it BENEFITS them, and you through your ignorance and apathy, are effectively doing the same.</p>
-
-<p>As most of you don&rsquo;t think beyond next week, the long-term consequences of this reality are inevitably lost on you. The only way you&rsquo;ll learn is by asking questions. That&rsquo;s also how you wield your AUTHORITY. The duties and obligations of those you have AUTHORITY over, are already UNDERSTOOD and PRESUMED. If you had a maid, and she was putting something strange on the floor, you could theoretically exercise your AUTHORITY as her employer, and DEMAND she stop. If, however, it turns out that she was fulfilling her duties as a maid (by putting Varathane on the floor, as stated in her contract), she would be well within her rights to object to your interference. Employees, like a ship&rsquo;s crew, act in the CAPTAIN&rsquo;s interest. It&rsquo;s not the employee&rsquo;s RIGHT or STANDING to ACT in the CORPORATION&rsquo;s INTEREST, unless explicitly instructed to do so, as AGENCY is ALWAYS PRESUMED. BY DEFAULT an employee is to act in the interest of their immediate superior. This is how large ORGANIZATIONS function and maintain themselves in the LEGAL MATRIX. You ignore this mechanism at your own peril.</p>
-
-<p>The key to defeating Meads v Meads, is a complete understanding of what it is, or more specifically, what it isn&rsquo;t. You are well within your rights to ask your &ldquo;servant&rdquo; what, or why, they are pouring something strange on your floor. The answer will hopefully reveal that she is simply doing so, in your interest. The rest is just details. The same applies to MEADS vs. MEADS. The parties in that action are both STRANGERS. Treat them as such. Do the same with the court.</p>
-
-<p>A simple question nullifies any misunderstanding. &ldquo;Are you CLAIMING that I am presenting an ARGUMENT, like Mr Meads? If I have lead you to BELIEVE that to be the case, then that would be a MISTAKE, and please forgive me&rdquo;. ;)</p>
-
-<p>NOTICE OF MISTAKE is so effective because it asks pointed questions, the truthful answers to which, will reveal that the GOVERNMENT regards you as PROPERTY. This, of course, happened in GERMANY in the 1930&rsquo;s, where Hitler discovered that there are a lot of angry, useful idiots, who would &ldquo;just do their jobs&rdquo;, and &ldquo;just follow orders&rdquo;. That&rsquo;s all it really takes to close up a free society. It&rsquo;s really not that much when you think about it. If you&rsquo;re not breeding, or producing something for the populace to consume, you are of absolutely no value to the INTERNATIONAL MONETARY FUND, and are therefore disposable. Hopefully there will never be a reader of this document that thinks I&rsquo;m stating the obvious there; because that means it&rsquo;s common knowledge and you, and all of your peers, did nothing about it.</p>
-
-<p>So what would I do if Meads v Meads is ever thrown at me? The LAW SOCIETY is actually forking out money to try to spread the idea that I am the same thing as an OPCA Litigant. If you make DECLARATIONS that are contrary to established facts and/or presumptions, you are by your very nature, a litigant. If you wish to litigate with me, you must address me in the capacity of JUDGE ADVOCATE GENERAL. Be warned, I&rsquo;m very good at that job. It&rsquo;s also why I make sure everybody knows that I am proudly anti-social. This is not a &ldquo;disorder&rdquo;, because I can state clearly and concisely (and I often do) why I am, in fact, anti-social. As I have previously stated, one of my biggest concerns is that the GOVERNMENT will avail itself, in the INTEREST of JUSTICE (I&rsquo;m not making that up), of one of the few rights it has left regarding me. It has the RIGHT, on behalf of HER MAJESTY, to compel me to serve as both a JUSTICE OF THE PEACE and a JUDGE ADVOCATE GENERAL. The LEGAL MECHANISM facilitating this is what facilitates a &ldquo;Peace Officer&rdquo; and &ldquo;Policy Enforcer&rdquo; being the same PERSON. In all LEGAL matters, the only PARTY with STANDING is a PERSON. They may compel me (and my PERSON) to ACT/SERVE as a Justice of the Peace. I don&rsquo;t even get paid. I get a reciept for service. That&rsquo;s it. The Law Society may, at their discretion, BUY that reciept. They never do, from what I hear. It&rsquo;s only a point of interest, because the oath that allows them to compel me to service, ends in 2016, and there is virtually NO chance of them binding me to service/handing over authority between now and 2016.</p>
-
-<p>The idea still creeps me out though.</p>
-
-<p>Were I to be drafted as a JUSTICE OF THE PEACE, I would be compelled to fulfill my duties to the best of my abilities. Imagine how compelling that is. The GOVERNMENT and the LAW SOCIETY has somebody with my knowledge of law at their disposal. They have but to set up all their pieces and play by the RULES; and appearing before me will assure victory every time. Any RULING and/or ENDORSEMENT I make will make your victory an immovable FACT IN LAW. You&rsquo;d think the GOVERNMENT would have leapt all over that years ago, and milked it until I died of old age and stress at the age of 52. They have the de facto AUTHORITY of HER MAJESTY. If they want to be really careful about SURETY, they can literally ORDER the GOVERNOR GENERAL to sign. And here&rsquo;s one of those little gold nuggets that everyone looks for in my writing&hellip;</p>
-
-<p>The LEGAL term &ldquo;GOVERNOR&rdquo; has absolutely nothing to do with GOVERNMENT. The LEGAL term GOVERNOR always refers to &ldquo;banking&rdquo;. The UNITED STATES has GOVERNORS for each STATE, because those GOVERNORS decide where the money goes. The wealth of the BRITISH EAST INDIA TRADING COMPANY was simply shuffled to the DUTCH EAST INDIA TRADING COMPANY, much like ESSO refers to itself as EXXON whenever it runs into anything resembling liability. And, the BRITISH EAST INDIA TRADING COMPANY, all but disappeared, yet their flag still flies there, and it&rsquo;s all managed by GOVERNORS. They&rsquo;re now an ORGANIZATION of RECEIVERS commonly known as HOMELAND SECURITY. HOMELAND WHAT?? Security, huh? Wonder what you&rsquo;ll get if you look up the LEGAL definition of &ldquo;security&rdquo;? GOVERNOR is a banking term. In every country in the COMMONWEALTH, the CITIZEN has absolutely NO interaction with any GOVERNOR. The GOVERNOR of the BANK OF CANADA, much like the GOVERNOR GENERAL, only has interaction with money. CITIZENS, PERSONS and the like, are irrelevant. To qualify to be a GOVERNOR of any sort, you must have demonstrated that you can responsibly wield the AUTHORITY. If you are a GOVERNOR with AUTHORITY, then you take ORDERS from an ORGANIZATION. That&rsquo;s what GOVERNORS do. GOVERNORS only TAKE ORDERS from an ORGANIZATION. They don&rsquo;t do anything else! The GOVERNOR GENERAL takes ORDERS from an ORGANIZATION called PARLIAMENT. The GOVERNOR of the BANK OF CANADA takes ORDERS from the BANK&rsquo;s Class &ldquo;A&rdquo; Shareholders. It doesn&rsquo;t matter what ORGANIZATION is giving the ORDERS, a GOVERNOR, much like a SOVEREIGN interacting with COMMERCE can only TAKE ORDERS. Remember the Nazi cop-out, &ldquo;I was just following orders?&rdquo;; well the reason this was so popular, and is an excuse accepted to this day, is that the ORDERS in question are what gave them LICENSE to commit the ILLEGAL/UNLAWFUL ACT the ORDERS demand. An ORDER, by its very nature, is a LICENSE. A LICENSE is permission to perform an ILLEGAL and/OR UNLAWFUL ACT.</p>
-
-<p>Put all of that together and make the necessary connections, and watch Meads v Meads vanish in a puff of reality.</p>
-
-<p>But we haven&rsquo;t really ended our &ldquo;Star-Wars&rdquo; rewrite. Well the conclusion of that story hasn&rsquo;t been filmed yet, but the current script has Luke Skywalker and Han Solo hiding out at the Jedi FORTRESS OF REMAND for years, while BOBA SCOTT and his SIMU-CLONES avail themselves of their right to hate-fuck Princess Leia for daring to presume authority over us. But don&rsquo;t worry&hellip;she was totally into it. BOBA SCOTT dumped all the SIMU-&hellip;clones, into the Sarlak Pit, and he and a local gangster named CHUBBY The FATT set off to find the legendary Skinny-Dipping Wolf-Women of Planet Heineken!</p>
-
-<p>&hellip;cue Star Wars &ldquo;Empire&rdquo; theme&hellip;</p>
-
-<p>*More on this later.
-FOCUS ON SURETY, ACCOUNTING, and AGENCY. ALWAYS!</p>
-
-<hr />
-
-<p>[Addendum by Scott Duncan:]</p>
-
-<p>Declare Meads &ldquo;Obiter Dictum&rdquo;, and you are done.<br>
-<br>
-When you hear the word &ldquo;Meads&rdquo; in court, OBJECT!<br>
-<br>
-&ldquo;OBJECTION! Obiter Dictum&rdquo;!<br>
-<br>
-The follow up with, &ldquo;THERE IS A QUESTION BEFORE THE COURT, TO WHICH I REQUIRE AN ANSWER&rdquo;, because they should ONLY raise Meads with the QUESTIONS you ask. Make a DECLARATION (like Meads did) and &ldquo;Obiter Dictum&rdquo; is irrelevant.</p>
-</p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </section>
-	</div>
-	<p class="center-text" style="padding: 30px;">
-	  <a class="btn btn-main" href="https://kentbarr.github.io/KBA//blog">Back to blog</a>
-	</p>
-
-	
-		
-<section id="call-to-action" style="background-image: url('https://kentbarr.github.io/KBA/img/call-to-action-bg.jpg');">
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          
-          <a class="btn btn-main btn-solid-border" href="#" >tell us your story</a>
-          
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-	
-
-	
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="footer-manu">
-          <ul>
-            
-            <li><a href="https://kentbarr.github.io/KBA">About us</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA/contact">Contact us</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA/work">How it works</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA/blog">Blog</a></li>
-            
-            <li><a href="https://kentbarr.github.io/KBA">Terms</a></li>
-            
-          </ul>
-        </div>
-        <p>Copyright &copy; Design &amp; Developed by Themefisher. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</body>
+    <!-- Theme Code -->
+      <script async defer src="/KBA/KBA/scripts/syna-main.min.7d08697560d9c911a0194673093ed24e917be39c0c6ea6ffe9bfefd7869f9f34.js"></script>
+  </body>
 </html>

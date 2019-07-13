@@ -1,4 +1,4 @@
-##### THE TENDER FOR LAW: PERSONS FOR IDIOTS (c) 2016 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+##### THE TENDER FOR LAW: ATTORNEY GENERAL MONEY (c) 2016 ROGUESUPPORT INC. under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
 
 
 It was mentioned by a [member](https://www.facebook.com/groups/tenderforlaw), that the concept of ATTORNEY GENERAL MONEY was not well known; so this is to clean up any misconceptions and to make a few things clear.
