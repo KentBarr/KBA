@@ -1,7 +1,7 @@
 title = "Kent Barrett Art"
 baseURL = "https://kentbarr.github.io/KBA/"
 languageCode = "en-us"
-theme = "syna"
+theme = "airspace"
 publishDir = "docs"
 
 # The site's parameters
