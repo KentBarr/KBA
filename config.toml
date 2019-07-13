@@ -57,7 +57,7 @@ publishDir = "docs"
     title = "Photographic Art <br>&amp; Law &amp; Stuff "
     subtitle = "The phography and artwork of Kent Barrett, plus articles about law and money by various authors."
     bgImage = "img/slider-bg.jpg"
-    btnText = "Discover Our Projects"
+    btnText = "This Doesn't Work Yet"
     url = "#"
 
   [params.wrapper]
@@ -65,7 +65,7 @@ publishDir = "docs"
     image = "img/wrapper-img.png"
     title = "About Me"
     italic = "They tell me I'm from Manitoba. But then, they could have told me anything."
-    paragraph = "I composed and shot my first photograph before I could talk. I took it with a Kodak Brownie Hawkeye which, because of the primitive optics, presents the image with left and right reversed as in a mirror. This was maddening to a toddler. Not only that, once I had managed to fiddle that out, I very carefully composed the shot so my parents' heads were cleanly in the frame. Then the photos came back from the drugstore and the very tops of Dad's head was cut off. Since that day I have hated all camera viewfinders *except* SLR's that show exactly 100% of the frame. ALL of them, even Leicas which are of course very impressive and beautiful machines. But fuck 'em. Because paralax."
+    paragraph = "I composed and shot my first photograph before I could talk. I took it with a Kodak Brownie Hawkeye which, because of the primitive optics, presents the image with left and right reversed as in a mirror. This was maddening to a toddler. Not only that, once I had managed to fiddle that out, I very carefully composed the shot so my parents' heads were cleanly in the frame. Then the photos came back from the drugstore and the very top of Dad's head was cut off. Since that day I have hated all camera viewfinders *except* SLR's that show exactly 100% of the frame. ALL of them, even Leicas which are of course very impressive and beautiful machines. But fuck 'em. Because paralax."
 
   [params.blog]
     enable = true
@@ -92,8 +92,8 @@ publishDir = "docs"
 
   [params.contact]
     enable = true
-    title = "Drop us a note"
-    subtitle = "Don’t just take our word for it. Check out some of our latest work."
+    title = "Hey, say hi!"
+    subtitle = "More work up soon."
     [params.contact.form]
       name = "Your name"
       email = "Your email"
@@ -103,7 +103,7 @@ publishDir = "docs"
     [params.contact.box]
       title = "Stop by for a visit"
       address = "North Main Street, Brooklyn Australia"
-      email = "Email: contact@mail.com"
+      email = "Email: github@kentbarrett.com"
       phone = "Phone: +88 01672 506 744"
     [params.contact.gmaps]
       title = "We Also Count in Google Maps"
