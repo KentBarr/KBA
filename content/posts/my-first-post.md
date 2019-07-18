@@ -1,5 +1,5 @@
 ---
-title: My First Post
+title: Copyright Notice
 date: 2019-07-12T17:32:28.000+00:00
 draft: true
 
